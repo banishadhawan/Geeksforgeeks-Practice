@@ -31,15 +31,12 @@ class Solution {
         Queue<Pair> q = new LinkedList<>();
         Map<Integer, Integer> map = new TreeMap<>();
 
-        // root has horizontal distance 0
-        q.offer(new Pair(root, 0));     //adding (inserting) an element into a queue
-
+        q.offer(new Pair(root, 0)); 
         while (!q.isEmpty()) {
             Pair fr = q.poll();
             Node temp = fr.node;
             int val = fr.val;
 
-            // store first node of each horizontal distance
             if (!map.containsKey(val)) {
                 map.put(val, temp.data);
             }
