@@ -16,7 +16,6 @@ class Solution {
     
     public int minTime(Node root, int target) {
         
-        // Step 1: Map to store parent
         HashMap<Node, Node> parentMap = new HashMap<>();
         
         // Step 2: Find target node
