@@ -9,9 +9,7 @@ class Solution {
         }
         
         int[] indegree = new int[n];
-        
-        // Build graph
-        for(int[] p : prerequisites) {
+                for(int[] p : prerequisites) {
             int course = p[0];
             int prereq = p[1];
             
