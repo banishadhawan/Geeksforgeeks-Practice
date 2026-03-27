@@ -4,8 +4,7 @@ class Solution {
     public ArrayList<Integer> minHeightRoot(int V, int[][] edges) {
         
         ArrayList<Integer> result = new ArrayList<>();
-        
-        // Edge case
+     
         if (V == 1) {
             result.add(0);
             return result;
