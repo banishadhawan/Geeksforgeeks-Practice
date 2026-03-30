@@ -15,7 +15,6 @@ class Solution {
                 dfs(neigh, node, adj, vis, disc, low, isAP);
                 low[node] = Math.min(low[node], low[neigh]);
                 
-                // articulation point condition
                 if (parent != -1 && low[neigh] >= disc[node]) {
                     isAP[node] = true;
                 }
@@ -26,7 +25,6 @@ class Solution {
             }
         }
         
-        // root node condition
         if (parent == -1 && child > 1) {
             isAP[node] = true;
         }
@@ -36,8 +34,7 @@ class Solution {
         
         ArrayList<ArrayList<Integer>> adj = new ArrayList<>();
         for (int i = 0; i < V; i++) adj.add(new ArrayList<>());
-        
-        // build graph
+     
         for (int[] e : edges) {
             adj.get(e[0]).add(e[1]);
             adj.get(e[1]).add(e[0]);
