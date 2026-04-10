@@ -6,17 +6,17 @@ class Solution {
 
         while (left < right) {
             
-            // Move left pointer until we find 1
+      
             while (arr[left] == 0 && left < right) {
                 left++;
             }
             
-            // Move right pointer until we find 0
+           
             while (arr[right] == 1 && left < right) {
                 right--;
             }
             
-            // Swap misplaced elements
+           
             if (left < right) {
                 swap(arr[left], arr[right]);
                 left++;
