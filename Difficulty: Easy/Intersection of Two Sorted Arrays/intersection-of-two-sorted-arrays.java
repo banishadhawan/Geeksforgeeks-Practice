@@ -9,8 +9,7 @@ class Solution {
         while (i < a.length && j < b.length) {
             
             if (a[i] == b[j]) {
-                // Avoid duplicates
-                if (result.size() == 0 || result.get(result.size() - 1) != a[i]) {
+                    if (result.size() == 0 || result.get(result.size() - 1) != a[i]) {
                     result.add(a[i]);
                 }
                 i++;
