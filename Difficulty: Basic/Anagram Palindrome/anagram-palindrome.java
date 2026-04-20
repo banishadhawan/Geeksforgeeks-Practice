@@ -7,14 +7,14 @@ class Solution {
             freq[s.charAt(i)]++;
         }
         
-        int count=0;
+        int oddcount=0;
         
         for(int i=0;i<256;i++){
             if(freq[i] % 2 != 0){
-                count++;
+                oddcount++;
             }
         }
         
-        return count<=1;
+        return oddcount<=1;
     }
 }
